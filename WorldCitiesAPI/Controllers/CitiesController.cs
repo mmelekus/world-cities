@@ -29,7 +29,7 @@ namespace WorldCitiesAPI.Controllers
           {
               return NotFound();
           }
-            return await _context.Cities.Take(1000).ToListAsync();
+            return await _context.Cities.ToListAsync();
         }
 
         // GET: api/Cities/5
