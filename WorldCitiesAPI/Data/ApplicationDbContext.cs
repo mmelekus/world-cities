@@ -10,6 +10,6 @@ namespace WorldCitiesAPI.Data
         public ApplicationDbContext(DbContextOptions options) : base(options) { }
 
         public DbSet<City> Cities => Set<City>();
-        public DbSet<Country> Country => Set<Country>();
+        public DbSet<Country> Countries => Set<Country>();
     }
 }
