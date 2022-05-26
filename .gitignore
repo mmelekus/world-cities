@@ -363,4 +363,4 @@ MigrationBackup/
 FodyWeavers.xsd
 
 # Angular files
-.angular
+**/.[Aa]ngular/*
