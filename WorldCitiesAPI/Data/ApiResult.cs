@@ -43,7 +43,7 @@ namespace WorldCitiesAPI.Data
             var count = await source.CountAsync();
             if (!string.IsNullOrEmpty(sortColumn) && IsValidProperty(sortColumn))
             {
-                sortOrder = !string.IsNullOrEmpty(sortOrder) && sortOrder.ToUpper() == "ASC" ? "ASC" : "DESC";
+                sortOrder = !string.IsNullOrEmpty(sortOrder) && sortOrder.ToUpper() == "DESC" ? "DESC" : "ASC";
                 source = source.OrderBy(string.Format("{0} {1}", sortColumn, sortOrder));
             }
             source = source.Skip(pageIndex * pageSize).Take(pageSize);
